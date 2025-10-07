@@ -1,16 +1,18 @@
-# This is a sample Python script.
-
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+from movies.movie import add_movie, movies
+from movies.movie import delete_movie
+from movies.movie import show_movies
 
 
-# Press the green button in the gutter to run the script.
+def main():
+    add_movie('The Matrix')
+    add_movie('The Lord of the Rings')
+    add_movie('Leon')
+    add_movie('The Hobbit')
+    add_movie('Smaug')
+    add_movie('The War of the Worlds')
+    show_movies()
+
+    print(movies)
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
